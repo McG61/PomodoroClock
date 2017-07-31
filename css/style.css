@@ -11,12 +11,12 @@
 
 .control_rest{
     position: absolute;
-    width: 116px;
+    width: 120px;
     left: 0;
 }
 .control_work{
     position: absolute;
-    width: 116px;
+    width: 120px;
     right: 0;
 }
 .control_btn{
