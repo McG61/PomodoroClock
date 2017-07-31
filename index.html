@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <div class="control">
+            <div class="control_rest">
+                <p>&nbsp;RestTime</p>
+                <button class="control_btn btn_subtract">-</button>
+                <span>5</span>
+                <button class="control_btn btn_add">+</button>
+            </div>
+            <div class="control_work">
+                <p>&nbsp;WorkTime</p>
+                <button class="control_btn btn_subtract">-</button>
+                <span>25</span>
+                <button class="control_btn btn_add">+</button>
+            </div>
+        </div>
+        <div class="progress">    
+            <div class="progress_bar work">
+                <p class="progress_text">Work</p>
+                <p class="progress_time">25</p>
+                <div class="mask work"></div>
+            </div>   
+        </div>
+        <audio id="bgMusic" src="audio/1.mp3" type="audio/mp3" loop="loop"></audio>
+    </div>
+    <script type="text/javascript" src="../jquery-3.2.1.js" ></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
