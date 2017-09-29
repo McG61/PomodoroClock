@@ -64,7 +64,7 @@ $(function(){
             int=setInterval(clock, 1000);
         }
     }
-    $(".control-rest .btn-subtract").click(function(event) {  //rest-按钮功能
+    $(".control-rest .btn-subtract").addEventListener('touchstart',function(event) {  //rest-按钮功能
         restTime=$(this).next().html();
         if(restTime>1)
         restTime--;
@@ -74,7 +74,7 @@ $(function(){
             time=restTime*60;
         }
     });
-    $(".control-rest .btn-add").click(function(event) {   //rest+按钮功能
+    $(".control-rest .btn-add").addEventListener('touchstart',function(event) {   //rest+按钮功能
         restTime=$(this).prev().html();
         restTime++;
         $(this).prev().html(parseInt(restTime));
@@ -84,7 +84,7 @@ $(function(){
         }
         //$(".control-rest button").attr("disabled", true);
     }); 
-    $(".control-work .btn-subtract").click(function(event) {  //work-按钮功能
+    $(".control-work .btn-subtract").addEventListener('touchstart',function(event) {  //work-按钮功能
         workTime=$(this).next().html();
         if(workTime>1)
         workTime--;
@@ -94,7 +94,7 @@ $(function(){
             time=workTime*60;
         }
     });
-    $(".control-work .btn-add").click(function(event) {   //work+按钮功能
+    $(".control-work .btn-add").addEventListener('touchstart',function(event) {   //work+按钮功能
         workTime=$(this).prev().html();
         workTime++;
         $(this).prev().html(parseInt(workTime));
@@ -104,7 +104,7 @@ $(function(){
         }
         //$(".control-rest button").attr("disabled", true);
     }); 
-    $(".progress").click(function(event) {
+    $(".progress").addEventListener('touchstart',function(event) {
         if (!flag){
             clearInterval(int);
             if (!status){
